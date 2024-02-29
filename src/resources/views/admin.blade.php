@@ -46,7 +46,7 @@
             </form>
 
             <div class="export-form">
-                <form action="{{ '/export?' . http_build_query(request()->query()) }}" method="post">
+                <form action="{{ '/export?' .http_build_query(request()->query()) }}" method="post">
                     @csrf
                     <input class="export__btn btn" type="submit" value="エクスポート">
                 </form>
